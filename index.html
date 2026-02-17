@@ -3,15 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Peter Adebisi | Portfolio</title>
+  <title>Peter Adebisi | Aspiring Project Manager</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Optional: Add a Google Font for better typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <header>
-    <nav>
-      <h1>Peter Adebisi</h1>
-      <ul>
+    <nav class="container">
+      <h1 class="logo">Peter Adebisi</h1>
+      <ul class="nav-menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -21,78 +25,132 @@
     </nav>
   </header>
 
-<section id="home" class="fade-in">
-    <img src="PETER.jpg" alt="Peter Adebisi" class="profile-img">
-  <h2>Project Manager | Liaison Officer</h2>
-  <p>
-    Welcome to my personal portfolio. I'm passionate about organizing teams, managing tasks, and helping ideas grow into real-world results. I’m transitioning into tech after over 4 years of corporate experience and currently learning digital project management tools and web technologies at PlP Academy NairobI,Kenya.
-  </p>
-  <p>
-    <a href="Peter-Adebisi-CV.pdf">📄 Download My CV</a> | <a href="#contact">📬 Contact Me</a>
-  </p>
-</section>
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="section home-section">
+      <div class="container home-container">
+        <div class="home-content">
+          <p class="greeting">Hello, I'm</p>
+          <h2>Peter Adebisi</h2>
+          <p class="title">Aspiring Project Manager | Liaison Officer</p>
+          <p class="description">
+            I'm passionate about organizing teams, managing tasks, and helping ideas grow into real-world results. I'm transitioning into tech after over 4 years of corporate experience and currently learning digital project management tools and web technologies at PLP Academy, Nairobi, Kenya.
+          </p>
+          <div class="cta-buttons">
+            <a href="Peter-Adebisi-CV.pdf" class="btn btn-primary" download>📄 Download CV</a>
+            <a href="#contact" class="btn btn-secondary">📬 Contact Me</a>
+          </div>
+        </div>
+        <div class="home-image">
+          <img src="PETER.jpg" alt="Peter Adebisi" class="profile-img">
+        </div>
+      </div>
+    </section>
 
-  <section id="about">
-  <h2>About Me</h2>
-  <p>
-    I'm Peter Adebisi, a passionate and detail-oriented aspiring Project Manager with a background in Business Administration. I hold a Higher National Diploma (HND) and have over four years of experience as a School Liaison Officer at Dufil Prima Foods.
-  </p>
-  <p>
-    I’m currently transitioning into the tech space, where I’m building strong foundations in digital project management, team coordination, and technology tools. I’m driven by a desire to lead impactful projects, collaborate with teams, and help bring ideas to life through clear planning and execution.
-  </p>
-  <p>
-    I am eager to grow, learn, and contribute to dynamic organizations that value innovation, structure, and problem-solving.
-  </p>
-</section>
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <p>
+            I'm Peter Adebisi, a passionate and detail-oriented aspiring Project Manager with a background in Business Administration. I hold a Higher National Diploma (HND) and have over four years of experience as a School Liaison Officer at Dufil Prima Foods, where I honed my skills in coordination, communication, and relationship management.
+          </p>
+          <p>
+            I’m currently transitioning into the tech space, building strong foundations in digital project management, team coordination, and technology tools. I’m driven by a desire to lead impactful projects, collaborate with teams, and help bring ideas to life through clear planning and execution.
+          </p>
+          <p>
+            I am eager to grow, learn, and contribute to dynamic organizations that value innovation, structure, and problem-solving.
+          </p>
+        </div>
+      </div>
+    </section>
 
-<section id="education" class="fade-in">
-  <h2>Education</h2>
-  <ul>
-    <li><strong>Software Development</strong> – Project Management  
-      <br>Power Learn Project Academy, Nairobi, Kenya
-      <br>Inview: July 2025
-    </li>
-    <li><strong>Higher National Diploma (HND)</strong> – Business Administration  
-      <br>Lagos State Polytechnic, Lagos State, Nigeria
-      <br>Graduated: 2022
-    </li>
-    <li><strong>Ordinary National Diploma (HND)</strong> – Business Administration  
-      <br>Yaba College of Technology, Lagos State, Nigeria
-      <br>Graduated: 2017
-      <p>You can download my resume below:</p>
-      <a href="Peter-Adebisi-CV.pdf" download>📄 Download My CV</a> 
-  </section>
-  
-<section id="skills" class="fade-in">
-  <h2>Skills</h2>
-  <ul>
-    <li>Project Scheduling,Planning & Coordination</li>
-    <li>Event Planning & Execution</li>
-    <li>Data Management</li>
-    <li>Task Management with Trello and Notion</li>
-    <li>Basic Html & Css Knowledge</li>
-    <li>Team Collaboration & Communication</li>
-    <li>Google Workspace, Microsoft Office</li>
-    <li>Time Management and Problem Solving</li>
-  </ul>
-</section>
+    <!-- Education Section -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <ul class="education-list">
+          <li class="education-item">
+            <strong>Software Development (Project Management Focus)</strong>
+            <span class="institution">Power Learn Project Academy, Nairobi, Kenya</span>
+            <span class="date">Expected: July 2025</span>
+          </li>
+          <li class="education-item">
+            <strong>Higher National Diploma (HND) in Business Administration</strong>
+            <span class="institution">Lagos State Polytechnic, Lagos State, Nigeria</span>
+            <span class="date">Graduated: 2022</span>
+          </li>
+          <li class="education-item">
+            <strong>Ordinary National Diploma (OND) in Business Administration</strong>
+            <span class="institution">Yaba College of Technology, Lagos State, Nigeria</span>
+            <span class="date">Graduated: 2017</span>
+          </li>
+        </ul>
+        <!-- Moved CV download link here for better flow -->
+        <div class="cv-download">
+           <a href="Peter-Adebisi-CV.pdf" class="btn btn-download" download>📄 Download My CV</a>
+        </div>
+      </div>
+    </section>
 
-  <section id="projects" class="fade-in">
-    <h2>Projects</h2>
-    <p><strong>Portfolio Website</strong> – A simple portfolio built with HTML and CSS (this one!).</p>
-    <p><strong>Coming Soon</strong> – More projects to be added as I grow in my coding journey.</p>
-  </section>
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <ul class="skills-list">
+          <li>Project Scheduling, Planning & Coordination</li>
+          <li>Event Planning & Execution</li>
+          <li>Data Management</li>
+          <li>Task Management (Trello, Notion)</li>
+          <li>Basic HTML & CSS</li>
+          <li>Team Collaboration & Communication</li>
+          <li>Google Workspace & Microsoft Office</li>
+          <li>Time Management & Problem Solving</li>
+        </ul>
+      </div>
+    </section>
 
-  <section id="contact" class="fade-in">
-    <h2>Contact</h2>
-    <p>Email: peterkunle90@gmail.com</p>
-    <p>Phone: +234 8133754026</p>
-    <p>Location: Lagos Nigeria</p>
-  </section>
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>A clean, responsive portfolio website built with HTML and CSS to showcase my profile and work. This project demonstrates my foundational web development skills.</p>
+            <!-- You can add links later -->
+            <!-- <a href="#" class="project-link">View Project →</a> -->
+          </div>
+          <div class="project-card">
+            <h3>More Coming Soon</h3>
+            <p>I'm actively working on new projects as I continue my learning journey in software development and project management. Check back for updates!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-details">
+          <p><span class="contact-label">Email:</span> <a href="mailto:peterkunle90@gmail.com">peterkunle90@gmail.com</a></p>
+          <p><span class="contact-label">Phone:</span> <a href="tel:+2348133754026">+234 813 375 4026</a></p>
+          <p><span class="contact-label">Location:</span> Lagos, Nigeria</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Peter Adebisi. All rights reserved.</p>
+    <div class="container">
+      <p>© <span id="current-year"></span> Peter Adebisi. All rights reserved.</p>
+    </div>
   </footer>
 
+  <script>
+    // Simple script to update the copyright year automatically
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
